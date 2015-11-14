@@ -1,6 +1,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 		<title>Pan Tadeusz</title>
 	</head>	
 	<body>
@@ -9,19 +17,15 @@
 		<div>
 			<p>Spis Treści</p>
 			<ul>
-				<li><a href="index.html">Strona Główna</a></li>
-				<li><a href="./k1.html">Księga I</a></li>
-				<li><a href="./k2.html">Księga II</a></li>
-				<li><a href="./k3.html">Księga III</a></li>
-				<li><a href="./k4.html">Księga IV</a></li>
-				<li><a href="./k5.html">Księga V</a></li>
-				<li><a href="./k6.html">Księga VI</a></li>
-				<li><a href="./k7.html">Księga VII</a></li>
-				<li><a href="./k8.html">Księga VIII</a></li>
-				<li><a href="./k9.html">Księga IX</a></li>
-				<li><a href="./k10.html">Księga X</a></li>
-				<li><a href="./k11.html">Księga XI</a></li>
-				<li><a href="./k12.html">Księga XII</a></li>
+				<div id="menu" class="container">
+					<ul class="nav nav-pills">
+						<?php for($i=1;$i<=12;$i++){$book=='k'.$i;
+						if(book==$_GET[book]{
+						echo("<li role='presentation' class ='active'><a herf='index.php$book=".$book."'Ksiega ".rome($i)."</a></li>)
+						}else 
+						{echo("<li role='presentation'><a herf='index.php$book=".$book."'>Księga ".rome($i).""</a></li>")}
+						}}
+				?>
 			</ul>
 		</div>
 	</body>	
